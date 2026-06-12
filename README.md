@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Dashboard
 
-## Getting Started
+A modern, fully responsive admin dashboard for e-commerce analytics built with **Next.js 16**, **TypeScript**, **Tailwind CSS**, and **Recharts**. The dashboard displays key metrics such as sales target progress, revenue, customer growth, transaction stats, and popular products — all powered by a mock API with built‑in loading and error handling.
 
-First, run the development server:
+![Dashboard Preview](https://via.placeholder.com/1200x600?text=E-commerce+Dashboard+Preview)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 📊 **Real‑time Sales Charts** – Interactive line charts showing average sale value and average item per sale.
+- 🎯 **Sales Target Tracker** – Editable progress bar with drag‑to‑adjust functionality.
+- 👥 **Customer Growth Map** – Visual representation of growth by province.
+- 📦 **Popular Products Table** – Expandable rows with product details and sortable columns.
+- 🌓 **Dark Mode** – Seamless theme switching with next‑themes.
+- 📱 **Fully Responsive** – Optimised for desktop, tablet, and mobile devices.
+- ⚡ **Mock API** – Simulated backend with loading states and error fallbacks (no real server required).
+- 🧩 **Reusable Components** – Modular design with TypeScript interfaces.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Category       | Technologies |
+|----------------|--------------|
+| Framework      | Next.js 16 (App Router) |
+| Language       | TypeScript 5 |
+| Styling        | Tailwind CSS 3 + CSS Variables |
+| Charts         | Recharts 3 |
+| Icons          | Lucide React |
+| Theme          | next‑themes |
+| State & Effects| React Hooks (useState, useEffect) |
+| HTTP Client    | Native fetch (with timeout & abort control) |
 
-## Learn More
+## 📁 Project Structure
+ecommerce-dashboard/
+├── app/ # Next.js App Router pages & API routes
+│ ├── api/ # Mock API endpoints
+│ ├── layout.tsx
+│ └── page.tsx
+├── components/
+│ ├── dashboard/ # Dashboard specific components
+│ └── layout/ # Header, Sidebar, ThemeProvider
+├── lib/
+│ ├── api.ts # API service with mock data fallback
+│ └── utils.ts # Helper functions (cn, formatNumber, etc.)
+├── public/ # Static assets (images, icons)
+├── styles/ # Global CSS & Tailwind directives
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to run the project locally.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+- **Node.js** 18.x or later (recommended: 20.x)
+- **npm** or **yarn** or **pnpm**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ecommerce-dashboard.git
+   cd ecommerce-dashboard
+   
+2. **Install dependencies**
+  npm install
+  # or
+  yarn install
+  # or
+  pnpm install
+
+3. **Run the development server**
+   npm run dev
+  # or
+  yarn dev
+  The application will be available at http://localhost:3000.
+
+4. **Build for production (optional)**
+   npm run build
+   npm start
+
+## 📡 API & Data
+The project uses a mock API located in /app/api/. All data (dashboard stats, sales chart, messages, notifications) is generated locally. No external database or real backend is required.
+
+If you later decide to connect a real API, modify the lib/api.ts file – replace the mock functions with actual fetch calls.
+
+## 🎨 Customisation
+Colours & Theme: Edit app/globals.css (CSS variables for light/dark mode) or tailwind.config.js.
+
+Mock Data: Update the mock objects inside lib/api.ts or the API route files (app/api/dashboard/route.ts, etc.).
+
+Sidebar Menu: Add/remove items in components/layout/Sidebar.tsx.
+
+## 📝 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+## 🙌 Acknowledgements
+- Next.js Documentation
+
+- Tailwind CSS
+
+- Recharts
+
+- Lucide Icons
+
