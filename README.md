@@ -26,25 +26,6 @@ A modern, fully responsive admin dashboard for e-commerce analytics built with *
 | State & Effects| React Hooks (useState, useEffect) |
 | HTTP Client    | Native fetch (with timeout & abort control) |
 
-## 📁 Project Structure
-ecommerce-dashboard/
-├── app/
-│   ├── api/                # Mock API endpoints
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── dashboard/          # Dashboard specific components
-│   └── layout/             # Header, Sidebar, ThemeProvider
-├── lib/
-│   ├── api.ts              # API service with mock data fallback
-│   └── utils.ts            # Helper functions (cn, formatNumber, etc.)
-├── public/                 # Static assets (images, icons)
-├── styles/                 # Global CSS & Tailwind directives
-├── .gitignore
-├── package.json
-├── README.md
-└── tsconfig.json
-
 ## 🚀 Getting Started
 
 Follow these steps to run the project locally.
