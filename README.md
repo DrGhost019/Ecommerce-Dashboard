@@ -2,8 +2,6 @@
 
 A modern, fully responsive admin dashboard for e-commerce analytics built with **Next.js 16**, **TypeScript**, **Tailwind CSS**, and **Recharts**. The dashboard displays key metrics such as sales target progress, revenue, customer growth, transaction stats, and popular products — all powered by a mock API with built‑in loading and error handling.
 
-![Dashboard Preview](https://via.placeholder.com/1200x600?text=E-commerce+Dashboard+Preview)
-
 ## ✨ Features
 
 - 📊 **Real‑time Sales Charts** – Interactive line charts showing average sale value and average item per sale.
@@ -30,18 +28,18 @@ A modern, fully responsive admin dashboard for e-commerce analytics built with *
 
 ## 📁 Project Structure
 ecommerce-dashboard/
-├── app/ # Next.js App Router pages & API routes
-│ ├── api/ # Mock API endpoints
-│ ├── layout.tsx
-│ └── page.tsx
+├── app/
+│   ├── api/                # Mock API endpoints
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-│ ├── dashboard/ # Dashboard specific components
-│ └── layout/ # Header, Sidebar, ThemeProvider
+│   ├── dashboard/          # Dashboard specific components
+│   └── layout/             # Header, Sidebar, ThemeProvider
 ├── lib/
-│ ├── api.ts # API service with mock data fallback
-│ └── utils.ts # Helper functions (cn, formatNumber, etc.)
-├── public/ # Static assets (images, icons)
-├── styles/ # Global CSS & Tailwind directives
+│   ├── api.ts              # API service with mock data fallback
+│   └── utils.ts            # Helper functions (cn, formatNumber, etc.)
+├── public/                 # Static assets (images, icons)
+├── styles/                 # Global CSS & Tailwind directives
 ├── .gitignore
 ├── package.json
 ├── README.md
